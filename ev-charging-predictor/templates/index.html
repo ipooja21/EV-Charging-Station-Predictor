@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Charging Predictor</title>
+</head>
+<body>
+  <h1>EV Charging Stations Predictor</h1>
+  <form method="post" action="/predict">
+    <label for="city_name">City Name:</label>
+    <input type="text" id="city_name" name="city_name" required>
+    <label for="pop_density">Population Density:</label>
+    <input type="number" id="pop_density" name="pop_density">
+    <button type="submit">Predict</button>
+  </form>
+
+  {% if map_path %}
+  <h2>EV Charging Map</h2>
+  <iframe src="{{ map_path }}" width="100%" height="500px"></iframe>
+  {% endif %}
+</body>
+</html>

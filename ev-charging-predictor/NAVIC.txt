@@ -1,0 +1,17 @@
+What we are using currently?
+
+1.Kaggle Dataset for the existing EV charging station data.
+2.Machine Learning Models: 
+			K-Means for clustering 
+			Linear Regression for demand prediction.
+3.folium library for map visualization, which does not require an external API.
+
+
+*****NOW ,want to enhance the project with APIs
+
+1.Map APIs:
+	NAVIC API
+2.EV Station Data APIs:
+ 	NREL API (National Renewable Energy Lab) 
+3.Population Data API
+	like Geo-Names or World Bank APIs for population density data

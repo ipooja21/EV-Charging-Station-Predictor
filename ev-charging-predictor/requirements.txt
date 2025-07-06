@@ -1,0 +1,6 @@
+flask
+folium
+numpy
+pandas
+scikit-learn
+osmnx

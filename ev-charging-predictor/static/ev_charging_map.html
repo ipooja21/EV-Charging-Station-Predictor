@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7fd953478c3078f8bfe5628421278be2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7fd953478c3078f8bfe5628421278be2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7fd953478c3078f8bfe5628421278be2 = L.map(
+                "map_7fd953478c3078f8bfe5628421278be2",
+                {
+                    center: [77.597289, 12.889141],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_11e245dc7417ec07a4717d3b8660eff3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_11e245dc7417ec07a4717d3b8660eff3.addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var marker_3fc67a65eaf706579748fc0859fb2472 = L.marker(
+                [77.597289, 12.889141],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d7110ae0b4c0b26f5acea2dbf65a7343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6866b14b83325eac87cf98c98f527aed = $(`<div id="html_6866b14b83325eac87cf98c98f527aed" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d7110ae0b4c0b26f5acea2dbf65a7343.setContent(html_6866b14b83325eac87cf98c98f527aed);
+            
+        
+
+        marker_3fc67a65eaf706579748fc0859fb2472.bindPopup(popup_d7110ae0b4c0b26f5acea2dbf65a7343)
+        ;
+
+        
+    
+    
+            var marker_c26abcba6115deb78c102fa9c5b91368 = L.marker(
+                [12.98452275, 77.74323914],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_c980422074d986f72bc841ff42b90686 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ff628290cbfe891f3fd560bc5f6004 = $(`<div id="html_29ff628290cbfe891f3fd560bc5f6004" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_c980422074d986f72bc841ff42b90686.setContent(html_29ff628290cbfe891f3fd560bc5f6004);
+            
+        
+
+        marker_c26abcba6115deb78c102fa9c5b91368.bindPopup(popup_c980422074d986f72bc841ff42b90686)
+        ;
+
+        
+    
+    
+            var marker_6e089a85f4959e1ed799e2bc2d383640 = L.marker(
+                [12.85190327, 77.66662247],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_da744b23c725cbb7536426e695e83563 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a85f2256b447a9ca4c23f02816973ff = $(`<div id="html_9a85f2256b447a9ca4c23f02816973ff" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_da744b23c725cbb7536426e695e83563.setContent(html_9a85f2256b447a9ca4c23f02816973ff);
+            
+        
+
+        marker_6e089a85f4959e1ed799e2bc2d383640.bindPopup(popup_da744b23c725cbb7536426e695e83563)
+        ;
+
+        
+    
+    
+            var marker_71b84017a004d7752aa8ad0d83b0edcc = L.marker(
+                [12.97720222, 77.72974546],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_e7f25756c8c38b430e23f82e33c373e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a55774fe8794da6be79d348da1a5b531 = $(`<div id="html_a55774fe8794da6be79d348da1a5b531" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_e7f25756c8c38b430e23f82e33c373e3.setContent(html_a55774fe8794da6be79d348da1a5b531);
+            
+        
+
+        marker_71b84017a004d7752aa8ad0d83b0edcc.bindPopup(popup_e7f25756c8c38b430e23f82e33c373e3)
+        ;
+
+        
+    
+    
+            var marker_ed1131cbb82070682cc6e5d1f92433b1 = L.marker(
+                [12.96365147, 77.70295917],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d8ae2b680e01bc228787c473b0f94ad9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19da05f5b73a87962ac50de6e0337773 = $(`<div id="html_19da05f5b73a87962ac50de6e0337773" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d8ae2b680e01bc228787c473b0f94ad9.setContent(html_19da05f5b73a87962ac50de6e0337773);
+            
+        
+
+        marker_ed1131cbb82070682cc6e5d1f92433b1.bindPopup(popup_d8ae2b680e01bc228787c473b0f94ad9)
+        ;
+
+        
+    
+    
+            var marker_151c6cc5c6ce99f553cb660e94f16dd5 = L.marker(
+                [12.96986878, 77.72521742],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d82a56c58d405d82c96915dad668145f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_957acf981ad8c2d7e89055252940f57c = $(`<div id="html_957acf981ad8c2d7e89055252940f57c" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d82a56c58d405d82c96915dad668145f.setContent(html_957acf981ad8c2d7e89055252940f57c);
+            
+        
+
+        marker_151c6cc5c6ce99f553cb660e94f16dd5.bindPopup(popup_d82a56c58d405d82c96915dad668145f)
+        ;
+
+        
+    
+    
+            var marker_a365846142eea7fe5c0379633cc0088c = L.marker(
+                [12.94340928, 77.69041467],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_bceac5f94da68e40ffc8102de6bb79b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_941a6812357af5a40683f8dfafbdbb6b = $(`<div id="html_941a6812357af5a40683f8dfafbdbb6b" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_bceac5f94da68e40ffc8102de6bb79b8.setContent(html_941a6812357af5a40683f8dfafbdbb6b);
+            
+        
+
+        marker_a365846142eea7fe5c0379633cc0088c.bindPopup(popup_bceac5f94da68e40ffc8102de6bb79b8)
+        ;
+
+        
+    
+    
+            var marker_ce29f916e73fb1237882eb62668be32d = L.marker(
+                [12.9472482, 77.64471171],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d92370b8e024863e5bedb347b822b558 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2f46fcda0b25861bb968351b29feb9 = $(`<div id="html_eb2f46fcda0b25861bb968351b29feb9" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d92370b8e024863e5bedb347b822b558.setContent(html_eb2f46fcda0b25861bb968351b29feb9);
+            
+        
+
+        marker_ce29f916e73fb1237882eb62668be32d.bindPopup(popup_d92370b8e024863e5bedb347b822b558)
+        ;
+
+        
+    
+    
+            var marker_381c8b2dc8d82f5f066a79f2ab2b104c = L.marker(
+                [13.15280614, 77.56897045],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_ef6c76765421098bcb01af92e3c5c9ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ed6f0539827d4d3fc34ea5dacb16f17 = $(`<div id="html_5ed6f0539827d4d3fc34ea5dacb16f17" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_ef6c76765421098bcb01af92e3c5c9ce.setContent(html_5ed6f0539827d4d3fc34ea5dacb16f17);
+            
+        
+
+        marker_381c8b2dc8d82f5f066a79f2ab2b104c.bindPopup(popup_ef6c76765421098bcb01af92e3c5c9ce)
+        ;
+
+        
+    
+    
+            var marker_b3dcfea207fc86971f4ee39688a1dc1e = L.marker(
+                [12.911365, 77.648946],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_460eafe7d649d56636b91d908c375b0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26911463f01e2f514fa10e113f816c19 = $(`<div id="html_26911463f01e2f514fa10e113f816c19" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_460eafe7d649d56636b91d908c375b0e.setContent(html_26911463f01e2f514fa10e113f816c19);
+            
+        
+
+        marker_b3dcfea207fc86971f4ee39688a1dc1e.bindPopup(popup_460eafe7d649d56636b91d908c375b0e)
+        ;
+
+        
+    
+    
+            var marker_f34fa6f3fbfeaa4b8c3e66842e19ccca = L.marker(
+                [12.916948, 77.610212],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_df37b957a37b24cc1e3edf0f659b528d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb741b66b927f60199306c860df9d6a5 = $(`<div id="html_fb741b66b927f60199306c860df9d6a5" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_df37b957a37b24cc1e3edf0f659b528d.setContent(html_fb741b66b927f60199306c860df9d6a5);
+            
+        
+
+        marker_f34fa6f3fbfeaa4b8c3e66842e19ccca.bindPopup(popup_df37b957a37b24cc1e3edf0f659b528d)
+        ;
+
+        
+    
+    
+            var marker_b3dc406744baffc3af6778ef81baae90 = L.marker(
+                [12.95903244, 77.66355582],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_8550d0a5ab8f95dad204b24d54a9c7f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0230256d61b37d54b004cbe1f4b34176 = $(`<div id="html_0230256d61b37d54b004cbe1f4b34176" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_8550d0a5ab8f95dad204b24d54a9c7f3.setContent(html_0230256d61b37d54b004cbe1f4b34176);
+            
+        
+
+        marker_b3dc406744baffc3af6778ef81baae90.bindPopup(popup_8550d0a5ab8f95dad204b24d54a9c7f3)
+        ;
+
+        
+    
+    
+            var marker_e1b47cba71d5e5ccd1110fa05ce6b2a6 = L.marker(
+                [12.964421, 77.644132],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d81cc2185542d8ef4f4e90fe35da7b00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_493d88a27b0499062d1227fe1917eb5c = $(`<div id="html_493d88a27b0499062d1227fe1917eb5c" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d81cc2185542d8ef4f4e90fe35da7b00.setContent(html_493d88a27b0499062d1227fe1917eb5c);
+            
+        
+
+        marker_e1b47cba71d5e5ccd1110fa05ce6b2a6.bindPopup(popup_d81cc2185542d8ef4f4e90fe35da7b00)
+        ;
+
+        
+    
+    
+            var marker_8dd415b774f782914eacf987a7081d22 = L.marker(
+                [12.926063, 77.547841],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_17219a86098e95fb2da163d768fdcfeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d67f031db9394c6f6f95b3d4a7aa94c = $(`<div id="html_7d67f031db9394c6f6f95b3d4a7aa94c" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_17219a86098e95fb2da163d768fdcfeb.setContent(html_7d67f031db9394c6f6f95b3d4a7aa94c);
+            
+        
+
+        marker_8dd415b774f782914eacf987a7081d22.bindPopup(popup_17219a86098e95fb2da163d768fdcfeb)
+        ;
+
+        
+    
+    
+            var marker_fea139d7bfbe3a23129daddf345ca4bd = L.marker(
+                [12.94980783, 77.54076228],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_477f3d211ca0722371b4a5d935b4e0e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc230feb4c9645f186118a75b1b61c0 = $(`<div id="html_0fc230feb4c9645f186118a75b1b61c0" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_477f3d211ca0722371b4a5d935b4e0e5.setContent(html_0fc230feb4c9645f186118a75b1b61c0);
+            
+        
+
+        marker_fea139d7bfbe3a23129daddf345ca4bd.bindPopup(popup_477f3d211ca0722371b4a5d935b4e0e5)
+        ;
+
+        
+    
+    
+            var marker_15c28c8020fd55a1eba487fdbefcad75 = L.marker(
+                [12.97610693, 77.58824006],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_1a00c8fed3da0f53c4fd8945602cb31a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25936a90423bb53a6b9341b32f9e7928 = $(`<div id="html_25936a90423bb53a6b9341b32f9e7928" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_1a00c8fed3da0f53c4fd8945602cb31a.setContent(html_25936a90423bb53a6b9341b32f9e7928);
+            
+        
+
+        marker_15c28c8020fd55a1eba487fdbefcad75.bindPopup(popup_1a00c8fed3da0f53c4fd8945602cb31a)
+        ;
+
+        
+    
+    
+            var marker_9635b0ef9f730aca003b3acb60581fb6 = L.marker(
+                [12.9947017, 77.70020485],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_05e5a6d289c0d901e1d297f0175d68b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4a0750de790185e2085bde67b11779c = $(`<div id="html_c4a0750de790185e2085bde67b11779c" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_05e5a6d289c0d901e1d297f0175d68b4.setContent(html_c4a0750de790185e2085bde67b11779c);
+            
+        
+
+        marker_9635b0ef9f730aca003b3acb60581fb6.bindPopup(popup_05e5a6d289c0d901e1d297f0175d68b4)
+        ;
+
+        
+    
+    
+            var marker_18ef8918099988e280c5cb7479c162c2 = L.marker(
+                [13.0202335, 77.64092334],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_a415049045375c0d41ec214111001ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d50e686dbc6872f1bbafbe3de09454e6 = $(`<div id="html_d50e686dbc6872f1bbafbe3de09454e6" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_a415049045375c0d41ec214111001ac9.setContent(html_d50e686dbc6872f1bbafbe3de09454e6);
+            
+        
+
+        marker_18ef8918099988e280c5cb7479c162c2.bindPopup(popup_a415049045375c0d41ec214111001ac9)
+        ;
+
+        
+    
+    
+            var marker_5f5b78c29395ad13df3bfc657e3ffcb8 = L.marker(
+                [13.04139, 77.62059],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_ddde4b92362dc1934357b0eb6fbd2772 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e3db4f8f24176c5ff838b65d4b432c = $(`<div id="html_75e3db4f8f24176c5ff838b65d4b432c" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_ddde4b92362dc1934357b0eb6fbd2772.setContent(html_75e3db4f8f24176c5ff838b65d4b432c);
+            
+        
+
+        marker_5f5b78c29395ad13df3bfc657e3ffcb8.bindPopup(popup_ddde4b92362dc1934357b0eb6fbd2772)
+        ;
+
+        
+    
+    
+            var marker_fe269e3bbb7f954423c416ecc5a77388 = L.marker(
+                [13.037895, 77.55769],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_e5c0fce8531f19497cb298a83c97201b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1e56979250c948f1ecf51e24dc65713 = $(`<div id="html_d1e56979250c948f1ecf51e24dc65713" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_e5c0fce8531f19497cb298a83c97201b.setContent(html_d1e56979250c948f1ecf51e24dc65713);
+            
+        
+
+        marker_fe269e3bbb7f954423c416ecc5a77388.bindPopup(popup_e5c0fce8531f19497cb298a83c97201b)
+        ;
+
+        
+    
+    
+            var marker_653f6ff42c1dd81652fc75a7edf80e25 = L.marker(
+                [13.095602, 77.594068],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_4dcabebcb29500d9d2fe9f6fbf802082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba8c86818a2c97689005e47d6dd09b03 = $(`<div id="html_ba8c86818a2c97689005e47d6dd09b03" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_4dcabebcb29500d9d2fe9f6fbf802082.setContent(html_ba8c86818a2c97689005e47d6dd09b03);
+            
+        
+
+        marker_653f6ff42c1dd81652fc75a7edf80e25.bindPopup(popup_4dcabebcb29500d9d2fe9f6fbf802082)
+        ;
+
+        
+    
+    
+            var marker_6b2702faa3a26fff902259d9dde0e724 = L.marker(
+                [13.14069, 77.617988],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_f7588d7ccda2739c2c8531d6fb56f31d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8d28f87f068efa62e0439bec47d3ce0 = $(`<div id="html_b8d28f87f068efa62e0439bec47d3ce0" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_f7588d7ccda2739c2c8531d6fb56f31d.setContent(html_b8d28f87f068efa62e0439bec47d3ce0);
+            
+        
+
+        marker_6b2702faa3a26fff902259d9dde0e724.bindPopup(popup_f7588d7ccda2739c2c8531d6fb56f31d)
+        ;
+
+        
+    
+    
+            var marker_8adf5992242f58a00d846951e74fd750 = L.marker(
+                [12.91162361, 77.64899678],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d448ab64c6da26be56970f1812c77a2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1547fac34962d3620613046d3256880 = $(`<div id="html_a1547fac34962d3620613046d3256880" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d448ab64c6da26be56970f1812c77a2e.setContent(html_a1547fac34962d3620613046d3256880);
+            
+        
+
+        marker_8adf5992242f58a00d846951e74fd750.bindPopup(popup_d448ab64c6da26be56970f1812c77a2e)
+        ;
+
+        
+    
+    
+            var marker_8fe97ae8d5e26344c944f20a171a5292 = L.marker(
+                [12.91895366, 77.61247565],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_78aebe8e61d78ab4de845170cf3c2743 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06c24647291873d1bc1f38145bb83470 = $(`<div id="html_06c24647291873d1bc1f38145bb83470" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_78aebe8e61d78ab4de845170cf3c2743.setContent(html_06c24647291873d1bc1f38145bb83470);
+            
+        
+
+        marker_8fe97ae8d5e26344c944f20a171a5292.bindPopup(popup_78aebe8e61d78ab4de845170cf3c2743)
+        ;
+
+        
+    
+    
+            var marker_7bbe731ca558070b624d40f08685fda5 = L.marker(
+                [12.93068034, 77.57662739],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_83e17b6fb32ed202ca24cbc055dfffaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98729db35da242af6b3f122c87d4329e = $(`<div id="html_98729db35da242af6b3f122c87d4329e" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_83e17b6fb32ed202ca24cbc055dfffaf.setContent(html_98729db35da242af6b3f122c87d4329e);
+            
+        
+
+        marker_7bbe731ca558070b624d40f08685fda5.bindPopup(popup_83e17b6fb32ed202ca24cbc055dfffaf)
+        ;
+
+        
+    
+    
+            var marker_0339e6d6916ec92424358dbb7c92c4cf = L.marker(
+                [12.9499757, 77.540718],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_1a7b93a12c6d1953970b5ece968e7868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_921bd16cd822f72ba5901a95c229e9c0 = $(`<div id="html_921bd16cd822f72ba5901a95c229e9c0" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_1a7b93a12c6d1953970b5ece968e7868.setContent(html_921bd16cd822f72ba5901a95c229e9c0);
+            
+        
+
+        marker_0339e6d6916ec92424358dbb7c92c4cf.bindPopup(popup_1a7b93a12c6d1953970b5ece968e7868)
+        ;
+
+        
+    
+    
+            var marker_a3b6d1e6837a5c3a22208e9651ee477c = L.marker(
+                [12.95898377, 77.66440273],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_5686a6128d75bc920f837aa71f6efb4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46d953e26bfb6a26df1a635a629a62ce = $(`<div id="html_46d953e26bfb6a26df1a635a629a62ce" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_5686a6128d75bc920f837aa71f6efb4b.setContent(html_46d953e26bfb6a26df1a635a629a62ce);
+            
+        
+
+        marker_a3b6d1e6837a5c3a22208e9651ee477c.bindPopup(popup_5686a6128d75bc920f837aa71f6efb4b)
+        ;
+
+        
+    
+    
+            var marker_008b7a50ca5e467905831f8331875037 = L.marker(
+                [12.96495904, 77.64423453],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_85bc6cb1996f5e8934fe3a1452d73bf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77d7ae22690521e1281ce8e23c035ec5 = $(`<div id="html_77d7ae22690521e1281ce8e23c035ec5" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_85bc6cb1996f5e8934fe3a1452d73bf9.setContent(html_77d7ae22690521e1281ce8e23c035ec5);
+            
+        
+
+        marker_008b7a50ca5e467905831f8331875037.bindPopup(popup_85bc6cb1996f5e8934fe3a1452d73bf9)
+        ;
+
+        
+    
+    
+            var marker_9c519100a701909494ad7c0a7f547110 = L.marker(
+                [13.02425398, 77.53671856],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_a8d19d3c1382416a36818f34af6021aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d26a34417e1a1da3dd70f0012f74353b = $(`<div id="html_d26a34417e1a1da3dd70f0012f74353b" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_a8d19d3c1382416a36818f34af6021aa.setContent(html_d26a34417e1a1da3dd70f0012f74353b);
+            
+        
+
+        marker_9c519100a701909494ad7c0a7f547110.bindPopup(popup_a8d19d3c1382416a36818f34af6021aa)
+        ;
+
+        
+    
+    
+            var marker_01ec3653bc69359378035b2b653f79fb = L.marker(
+                [13.06689523, 77.44430974],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_acaa6d83a41cb2633f6df4dc9c56c244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c055526ba4f6fa6e5a344c5ac11af2c6 = $(`<div id="html_c055526ba4f6fa6e5a344c5ac11af2c6" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_acaa6d83a41cb2633f6df4dc9c56c244.setContent(html_c055526ba4f6fa6e5a344c5ac11af2c6);
+            
+        
+
+        marker_01ec3653bc69359378035b2b653f79fb.bindPopup(popup_acaa6d83a41cb2633f6df4dc9c56c244)
+        ;
+
+        
+    
+    
+            var marker_b21f108c632e8643732240ab84442d4a = L.marker(
+                [13.02043003, 77.64093356],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_aad5ff66d3ad9ea8b59f2cda6fa98a1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01b0219c28289caf16edc191ff8bf46d = $(`<div id="html_01b0219c28289caf16edc191ff8bf46d" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_aad5ff66d3ad9ea8b59f2cda6fa98a1c.setContent(html_01b0219c28289caf16edc191ff8bf46d);
+            
+        
+
+        marker_b21f108c632e8643732240ab84442d4a.bindPopup(popup_aad5ff66d3ad9ea8b59f2cda6fa98a1c)
+        ;
+
+        
+    
+    
+            var marker_490e8d5475cda65c4122be3562bd574f = L.marker(
+                [12.99493599, 77.69924534],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_8322c874da4102e80d6a923e3267ffa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc14ad0d20c0b5bce312416a2e960937 = $(`<div id="html_dc14ad0d20c0b5bce312416a2e960937" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_8322c874da4102e80d6a923e3267ffa4.setContent(html_dc14ad0d20c0b5bce312416a2e960937);
+            
+        
+
+        marker_490e8d5475cda65c4122be3562bd574f.bindPopup(popup_8322c874da4102e80d6a923e3267ffa4)
+        ;
+
+        
+    
+    
+            var marker_e98a809e9ee727138f962a10f471833e = L.marker(
+                [13.09596479, 77.59452594],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_fe1a8ee6e3efd270c4f70847cb5cda9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5ce41376a0ecf39d0113ad4e3a286a0 = $(`<div id="html_a5ce41376a0ecf39d0113ad4e3a286a0" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_fe1a8ee6e3efd270c4f70847cb5cda9a.setContent(html_a5ce41376a0ecf39d0113ad4e3a286a0);
+            
+        
+
+        marker_e98a809e9ee727138f962a10f471833e.bindPopup(popup_fe1a8ee6e3efd270c4f70847cb5cda9a)
+        ;
+
+        
+    
+    
+            var marker_eacbcb77d448b1e6da13a873a779f869 = L.marker(
+                [13.05335357, 77.54322724],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_203c2b07a00f68da86278d51fa96a839 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e588c7713ac050753d885dd4be183e4 = $(`<div id="html_3e588c7713ac050753d885dd4be183e4" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_203c2b07a00f68da86278d51fa96a839.setContent(html_3e588c7713ac050753d885dd4be183e4);
+            
+        
+
+        marker_eacbcb77d448b1e6da13a873a779f869.bindPopup(popup_203c2b07a00f68da86278d51fa96a839)
+        ;
+
+        
+    
+    
+            var marker_e9c6dafd51751057439c41a7f20835d8 = L.marker(
+                [13.03823943, 77.55775104],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_9662284251cab2304d377324c3b711cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d085afe99e86c165a6aaf4a9792c831f = $(`<div id="html_d085afe99e86c165a6aaf4a9792c831f" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_9662284251cab2304d377324c3b711cc.setContent(html_d085afe99e86c165a6aaf4a9792c831f);
+            
+        
+
+        marker_e9c6dafd51751057439c41a7f20835d8.bindPopup(popup_9662284251cab2304d377324c3b711cc)
+        ;
+
+        
+    
+    
+            var marker_6c3dac460076014c896a949610f11df7 = L.marker(
+                [13.03211103, 77.52748284],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_b4d82995fc3b14917014d281825967f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b114274ca0b5fe8cc7f2a7621e788866 = $(`<div id="html_b114274ca0b5fe8cc7f2a7621e788866" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_b4d82995fc3b14917014d281825967f6.setContent(html_b114274ca0b5fe8cc7f2a7621e788866);
+            
+        
+
+        marker_6c3dac460076014c896a949610f11df7.bindPopup(popup_b4d82995fc3b14917014d281825967f6)
+        ;
+
+        
+    
+    
+            var marker_86894581aa6ebc86235e450a1a5f41f7 = L.marker(
+                [12.996362, 77.695802],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_6b7784438eabe6c2b8fc895cd370e847 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23353f5e586aa1783e99460d30ca0643 = $(`<div id="html_23353f5e586aa1783e99460d30ca0643" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_6b7784438eabe6c2b8fc895cd370e847.setContent(html_23353f5e586aa1783e99460d30ca0643);
+            
+        
+
+        marker_86894581aa6ebc86235e450a1a5f41f7.bindPopup(popup_6b7784438eabe6c2b8fc895cd370e847)
+        ;
+
+        
+    
+    
+            var marker_d4c1dc57d1fc393e33c63a056d8a0b2d = L.marker(
+                [12.934801, 77.610918],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_41bb9ee8a27705c88eb8414c8581992e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f164e1372cbaa495ef5da8153b000b8c = $(`<div id="html_f164e1372cbaa495ef5da8153b000b8c" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_41bb9ee8a27705c88eb8414c8581992e.setContent(html_f164e1372cbaa495ef5da8153b000b8c);
+            
+        
+
+        marker_d4c1dc57d1fc393e33c63a056d8a0b2d.bindPopup(popup_41bb9ee8a27705c88eb8414c8581992e)
+        ;
+
+        
+    
+    
+            var marker_b4c5814aa9bfd1f4dd1643a8e8b52875 = L.marker(
+                [13.04279, 77.6093],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_88c434e1e58296b87f676c594e5a6a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a3e409f4642c509d7bc84fc88905cf2 = $(`<div id="html_6a3e409f4642c509d7bc84fc88905cf2" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_88c434e1e58296b87f676c594e5a6a76.setContent(html_6a3e409f4642c509d7bc84fc88905cf2);
+            
+        
+
+        marker_b4c5814aa9bfd1f4dd1643a8e8b52875.bindPopup(popup_88c434e1e58296b87f676c594e5a6a76)
+        ;
+
+        
+    
+    
+            var marker_b6d7f4fd8cd9f50923f8be2a21a286b1 = L.marker(
+                [12.99929, 77.54963],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_12b42f144d205190516f7b74207cbcac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7713e896665f1d2966fe0dd68a8e637 = $(`<div id="html_e7713e896665f1d2966fe0dd68a8e637" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_12b42f144d205190516f7b74207cbcac.setContent(html_e7713e896665f1d2966fe0dd68a8e637);
+            
+        
+
+        marker_b6d7f4fd8cd9f50923f8be2a21a286b1.bindPopup(popup_12b42f144d205190516f7b74207cbcac)
+        ;
+
+        
+    
+    
+            var marker_a520961648109692ffc0a434be8c767a = L.marker(
+                [12.90392, 77.57349],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_2e2e2a3c4fafebff613b0686cb65289a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_322118671a7fc984026adf10c745f5cb = $(`<div id="html_322118671a7fc984026adf10c745f5cb" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_2e2e2a3c4fafebff613b0686cb65289a.setContent(html_322118671a7fc984026adf10c745f5cb);
+            
+        
+
+        marker_a520961648109692ffc0a434be8c767a.bindPopup(popup_2e2e2a3c4fafebff613b0686cb65289a)
+        ;
+
+        
+    
+    
+            var marker_b1fa5b80bcb5b61000756aebc73bcb92 = L.marker(
+                [12.97692, 77.71861],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_07524272c3818f8b322b24a975a99cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87db58c162144fb671d1700c061deb9d = $(`<div id="html_87db58c162144fb671d1700c061deb9d" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_07524272c3818f8b322b24a975a99cc6.setContent(html_87db58c162144fb671d1700c061deb9d);
+            
+        
+
+        marker_b1fa5b80bcb5b61000756aebc73bcb92.bindPopup(popup_07524272c3818f8b322b24a975a99cc6)
+        ;
+
+        
+    
+    
+            var marker_a55a8511f139cd118a82e7b6a1c5fe62 = L.marker(
+                [12.95234, 77.63997],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_85238a40071f0c817ba154093f6fa3ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19819707c538cbc2382f578585090119 = $(`<div id="html_19819707c538cbc2382f578585090119" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_85238a40071f0c817ba154093f6fa3ae.setContent(html_19819707c538cbc2382f578585090119);
+            
+        
+
+        marker_a55a8511f139cd118a82e7b6a1c5fe62.bindPopup(popup_85238a40071f0c817ba154093f6fa3ae)
+        ;
+
+        
+    
+    
+            var marker_0ab1eecd6d9c07c596b5a4a79cdc3d6f = L.marker(
+                [12.89083, 77.63821],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_126b0db07fb62da674aa83af79231372 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d36b7359e47c77e30e51e737996f6eb3 = $(`<div id="html_d36b7359e47c77e30e51e737996f6eb3" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_126b0db07fb62da674aa83af79231372.setContent(html_d36b7359e47c77e30e51e737996f6eb3);
+            
+        
+
+        marker_0ab1eecd6d9c07c596b5a4a79cdc3d6f.bindPopup(popup_126b0db07fb62da674aa83af79231372)
+        ;
+
+        
+    
+    
+            var marker_2f293bec9979c54d52857bf7446d7aef = L.marker(
+                [12.96684, 77.71657],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_c84287929bc884830bfe969cb97ba284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ce6ba765e24b267fa3e47bbb543b82a = $(`<div id="html_7ce6ba765e24b267fa3e47bbb543b82a" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_c84287929bc884830bfe969cb97ba284.setContent(html_7ce6ba765e24b267fa3e47bbb543b82a);
+            
+        
+
+        marker_2f293bec9979c54d52857bf7446d7aef.bindPopup(popup_c84287929bc884830bfe969cb97ba284)
+        ;
+
+        
+    
+    
+            var marker_9890b6919d88486e9a5a6a0fdfcb01a6 = L.marker(
+                [12.872053, 77.651174],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_d759b00e16e7e85b7b395e0af9586ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84b0594eda3193af9c186f6c9c7fff53 = $(`<div id="html_84b0594eda3193af9c186f6c9c7fff53" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_d759b00e16e7e85b7b395e0af9586ca2.setContent(html_84b0594eda3193af9c186f6c9c7fff53);
+            
+        
+
+        marker_9890b6919d88486e9a5a6a0fdfcb01a6.bindPopup(popup_d759b00e16e7e85b7b395e0af9586ca2)
+        ;
+
+        
+    
+    
+            var marker_204c17c0781775d420027f13d552078a = L.marker(
+                [77.597289, 12.889141],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_b74c83745a2c27a825b251835f0baf8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1631f5cedc17692d7b1de17b6d51281 = $(`<div id="html_f1631f5cedc17692d7b1de17b6d51281" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_b74c83745a2c27a825b251835f0baf8f.setContent(html_f1631f5cedc17692d7b1de17b6d51281);
+            
+        
+
+        marker_204c17c0781775d420027f13d552078a.bindPopup(popup_b74c83745a2c27a825b251835f0baf8f)
+        ;
+
+        
+    
+    
+            var marker_dd69d6aa6fa3f030166327074ca3968c = L.marker(
+                [13.192134, 77.646586],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+        var popup_e41c02362475180787e296f12c12dd99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e08d32f9d522351799d0d91a5b7e4d28 = $(`<div id="html_e08d32f9d522351799d0d91a5b7e4d28" style="width: 100.0%; height: 100.0%;">Existing EV Charging Station</div>`)[0];
+                popup_e41c02362475180787e296f12c12dd99.setContent(html_e08d32f9d522351799d0d91a5b7e4d28);
+            
+        
+
+        marker_dd69d6aa6fa3f030166327074ca3968c.bindPopup(popup_e41c02362475180787e296f12c12dd99)
+        ;
+
+        
+    
+    
+            var marker_263c6adaefbede7749b478ab0cdfe8d6 = L.marker(
+                [13.14069, 77.617988],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_da7f74a7f6506731542743c6d1f12953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_263c6adaefbede7749b478ab0cdfe8d6.setIcon(icon_da7f74a7f6506731542743c6d1f12953);
+        
+    
+        var popup_cbbbef61acad6dc685a8756179c362e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8c2c65675e72427d9b777d5b8f20e11 = $(`<div id="html_f8c2c65675e72427d9b777d5b8f20e11" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_cbbbef61acad6dc685a8756179c362e3.setContent(html_f8c2c65675e72427d9b777d5b8f20e11);
+            
+        
+
+        marker_263c6adaefbede7749b478ab0cdfe8d6.bindPopup(popup_cbbbef61acad6dc685a8756179c362e3)
+        ;
+
+        
+    
+    
+            var marker_e6159eaccb6f7d97546e6814bb3d3dba = L.marker(
+                [77.597289, 12.889141000000002],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_e355a7fe7d278d6d901517d2752f493e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e6159eaccb6f7d97546e6814bb3d3dba.setIcon(icon_e355a7fe7d278d6d901517d2752f493e);
+        
+    
+        var popup_7eb9a0cde4c5c1c1bb6052e4df742c96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a91646352cc71c1b1afc57d8a23e1f83 = $(`<div id="html_a91646352cc71c1b1afc57d8a23e1f83" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_7eb9a0cde4c5c1c1bb6052e4df742c96.setContent(html_a91646352cc71c1b1afc57d8a23e1f83);
+            
+        
+
+        marker_e6159eaccb6f7d97546e6814bb3d3dba.bindPopup(popup_7eb9a0cde4c5c1c1bb6052e4df742c96)
+        ;
+
+        
+    
+    
+            var marker_c22a63a630d515a43b699d445f92c69f = L.marker(
+                [12.8814415, 77.64469199999999],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_9fa0a614cf421c3f361c1ab6d37eb336 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c22a63a630d515a43b699d445f92c69f.setIcon(icon_9fa0a614cf421c3f361c1ab6d37eb336);
+        
+    
+        var popup_e5485c83d4957daf15c79c47de7bf188 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f15f75b969b22e899c6b7b158e770c5 = $(`<div id="html_4f15f75b969b22e899c6b7b158e770c5" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_e5485c83d4957daf15c79c47de7bf188.setContent(html_4f15f75b969b22e899c6b7b158e770c5);
+            
+        
+
+        marker_c22a63a630d515a43b699d445f92c69f.bindPopup(popup_e5485c83d4957daf15c79c47de7bf188)
+        ;
+
+        
+    
+    
+            var marker_3e4eae11db612b3bc8633e16d38cc6d9 = L.marker(
+                [13.043162666666667, 77.55288942666667],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_29b8555ce22883fb265c3114d7083a78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e4eae11db612b3bc8633e16d38cc6d9.setIcon(icon_29b8555ce22883fb265c3114d7083a78);
+        
+    
+        var popup_af17b8c2be0016174faef484732627b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a78ab3029a7b4fe716747514d7804cd = $(`<div id="html_6a78ab3029a7b4fe716747514d7804cd" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_af17b8c2be0016174faef484732627b3.setContent(html_6a78ab3029a7b4fe716747514d7804cd);
+            
+        
+
+        marker_3e4eae11db612b3bc8633e16d38cc6d9.bindPopup(popup_af17b8c2be0016174faef484732627b3)
+        ;
+
+        
+    
+    
+            var marker_9aa4510fe36fd87cbd953a7de147061e = L.marker(
+                [12.9693200625, 77.7158391475],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_2a3cbd984cfffd6dfc5a124a0be7a775 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9aa4510fe36fd87cbd953a7de147061e.setIcon(icon_2a3cbd984cfffd6dfc5a124a0be7a775);
+        
+    
+        var popup_64c2a7416a2de3bb37010788f6cc6c34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b10f3bff13050fcaaf47f975bab2f0f = $(`<div id="html_1b10f3bff13050fcaaf47f975bab2f0f" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_64c2a7416a2de3bb37010788f6cc6c34.setContent(html_1b10f3bff13050fcaaf47f975bab2f0f);
+            
+        
+
+        marker_9aa4510fe36fd87cbd953a7de147061e.bindPopup(popup_64c2a7416a2de3bb37010788f6cc6c34)
+        ;
+
+        
+    
+    
+            var marker_90d8f86cf239ba883168b4235f65e352 = L.marker(
+                [12.926063, 77.547841],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_becc5a3bb048e4496d1ec3672caf8210 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_90d8f86cf239ba883168b4235f65e352.setIcon(icon_becc5a3bb048e4496d1ec3672caf8210);
+        
+    
+        var popup_134af833ba0bf0e3b0b9f1cc167cd29a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcd53d7c29c04383d5ee34e0f4cd22bd = $(`<div id="html_bcd53d7c29c04383d5ee34e0f4cd22bd" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_134af833ba0bf0e3b0b9f1cc167cd29a.setContent(html_bcd53d7c29c04383d5ee34e0f4cd22bd);
+            
+        
+
+        marker_90d8f86cf239ba883168b4235f65e352.bindPopup(popup_134af833ba0bf0e3b0b9f1cc167cd29a)
+        ;
+
+        
+    
+    
+            var marker_46d5cbcb58cdeb82deb93644c74410a6 = L.marker(
+                [13.020331765, 77.64092844999999],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_4372399167f6a603b34779141e01c509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_46d5cbcb58cdeb82deb93644c74410a6.setIcon(icon_4372399167f6a603b34779141e01c509);
+        
+    
+        var popup_0197e7545ab946bd080aab12cb1841be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93bc9a98434acddaa7e722234a3382bc = $(`<div id="html_93bc9a98434acddaa7e722234a3382bc" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_0197e7545ab946bd080aab12cb1841be.setContent(html_93bc9a98434acddaa7e722234a3382bc);
+            
+        
+
+        marker_46d5cbcb58cdeb82deb93644c74410a6.bindPopup(popup_0197e7545ab946bd080aab12cb1841be)
+        ;
+
+        
+    
+    
+            var marker_09293b194379b11222b080eac6570f34 = L.marker(
+                [12.95724206, 77.64326206],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_17fb9ce420f422e9887cb3079cda2d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09293b194379b11222b080eac6570f34.setIcon(icon_17fb9ce420f422e9887cb3079cda2d51);
+        
+    
+        var popup_29a97cd52a4db767db72104e0b9421f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20ef3d1c1ff28f62a0508233264fdb35 = $(`<div id="html_20ef3d1c1ff28f62a0508233264fdb35" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_29a97cd52a4db767db72104e0b9421f0.setContent(html_20ef3d1c1ff28f62a0508233264fdb35);
+            
+        
+
+        marker_09293b194379b11222b080eac6570f34.bindPopup(popup_29a97cd52a4db767db72104e0b9421f0)
+        ;
+
+        
+    
+    
+            var marker_643eb40262532b2f2f54d2b4a88b049f = L.marker(
+                [12.97610693, 77.58824006],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_5238adb7c6686705c675e4f8a0cb1ec2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_643eb40262532b2f2f54d2b4a88b049f.setIcon(icon_5238adb7c6686705c675e4f8a0cb1ec2);
+        
+    
+        var popup_e154bd8c3471b8033dd6eb83df823dfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a389589e28187bc4d12618d32416e292 = $(`<div id="html_a389589e28187bc4d12618d32416e292" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_e154bd8c3471b8033dd6eb83df823dfd.setContent(html_a389589e28187bc4d12618d32416e292);
+            
+        
+
+        marker_643eb40262532b2f2f54d2b4a88b049f.bindPopup(popup_e154bd8c3471b8033dd6eb83df823dfd)
+        ;
+
+        
+    
+    
+            var marker_ac0c55e84f5a9b294534e758cb4bc018 = L.marker(
+                [13.06689523, 77.44430974],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_6474ff371a7aacb2e1ec747cb2597800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ac0c55e84f5a9b294534e758cb4bc018.setIcon(icon_6474ff371a7aacb2e1ec747cb2597800);
+        
+    
+        var popup_1c4e405955c0022218f5c0f468307090 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca4a24824012e586eb8c0195c62e9a4c = $(`<div id="html_ca4a24824012e586eb8c0195c62e9a4c" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_1c4e405955c0022218f5c0f468307090.setContent(html_ca4a24824012e586eb8c0195c62e9a4c);
+            
+        
+
+        marker_ac0c55e84f5a9b294534e758cb4bc018.bindPopup(popup_1c4e405955c0022218f5c0f468307090)
+        ;
+
+        
+    
+    
+            var marker_0f7725ac859c81dba5c53c9fadbf283a = L.marker(
+                [13.095783395, 77.59429696999999],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_108fe3e06cdb8d67385353c8d193c120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0f7725ac859c81dba5c53c9fadbf283a.setIcon(icon_108fe3e06cdb8d67385353c8d193c120);
+        
+    
+        var popup_1d34e9f9c050708c886dc09baf2eb763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a2de254f76c0914882928483537272a = $(`<div id="html_6a2de254f76c0914882928483537272a" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_1d34e9f9c050708c886dc09baf2eb763.setContent(html_6a2de254f76c0914882928483537272a);
+            
+        
+
+        marker_0f7725ac859c81dba5c53c9fadbf283a.bindPopup(popup_1d34e9f9c050708c886dc09baf2eb763)
+        ;
+
+        
+    
+    
+            var marker_ec8a9eb84490af2362f7381d2e881760 = L.marker(
+                [12.923567553333333, 77.61120188333334],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_4a0db9adc99dad12ba88eda866031598 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec8a9eb84490af2362f7381d2e881760.setIcon(icon_4a0db9adc99dad12ba88eda866031598);
+        
+    
+        var popup_54459fd68d0ef5f4351d425d9e41ccc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d52647483d5cfc0330a1fcafcd96aa66 = $(`<div id="html_d52647483d5cfc0330a1fcafcd96aa66" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_54459fd68d0ef5f4351d425d9e41ccc7.setContent(html_d52647483d5cfc0330a1fcafcd96aa66);
+            
+        
+
+        marker_ec8a9eb84490af2362f7381d2e881760.bindPopup(popup_54459fd68d0ef5f4351d425d9e41ccc7)
+        ;
+
+        
+    
+    
+            var marker_2d10b314eb15b0626a70e0418147404f = L.marker(
+                [12.99533323, 77.69841739666667],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_2778ed104a6dccc274f2f882daf44619 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2d10b314eb15b0626a70e0418147404f.setIcon(icon_2778ed104a6dccc274f2f882daf44619);
+        
+    
+        var popup_b3d441a1d20566096f49322cd1a35faf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93aa23924dfdc22eb355874f8f958677 = $(`<div id="html_93aa23924dfdc22eb355874f8f958677" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_b3d441a1d20566096f49322cd1a35faf.setContent(html_93aa23924dfdc22eb355874f8f958677);
+            
+        
+
+        marker_2d10b314eb15b0626a70e0418147404f.bindPopup(popup_b3d441a1d20566096f49322cd1a35faf)
+        ;
+
+        
+    
+    
+            var marker_b80be4b871826ded7dbdcd55f69d299d = L.marker(
+                [13.192134, 77.646586],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_e46c6dc206fea5075c924d4b78f40d50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b80be4b871826ded7dbdcd55f69d299d.setIcon(icon_e46c6dc206fea5075c924d4b78f40d50);
+        
+    
+        var popup_3592bc326bb84cf47d3a3edfc809d0b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c2e57458e984b20df089ca226139320 = $(`<div id="html_5c2e57458e984b20df089ca226139320" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_3592bc326bb84cf47d3a3edfc809d0b0.setContent(html_5c2e57458e984b20df089ca226139320);
+            
+        
+
+        marker_b80be4b871826ded7dbdcd55f69d299d.bindPopup(popup_3592bc326bb84cf47d3a3edfc809d0b0)
+        ;
+
+        
+    
+    
+            var marker_670e6e05ecf489e8904e02198715432a = L.marker(
+                [13.15280614, 77.56897045],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_254e24b337c24a29eaadf8296633c895 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_670e6e05ecf489e8904e02198715432a.setIcon(icon_254e24b337c24a29eaadf8296633c895);
+        
+    
+        var popup_192ed4e28f77f17d758aacf250a0fec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d459abd89942fcb31aebaaa652e7770 = $(`<div id="html_2d459abd89942fcb31aebaaa652e7770" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_192ed4e28f77f17d758aacf250a0fec5.setContent(html_2d459abd89942fcb31aebaaa652e7770);
+            
+        
+
+        marker_670e6e05ecf489e8904e02198715432a.bindPopup(popup_192ed4e28f77f17d758aacf250a0fec5)
+        ;
+
+        
+    
+    
+            var marker_02ca7567048b3ea3347a8cf36cc03bef = L.marker(
+                [12.85190327, 77.66662247],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_2c4e70961548447fd6e72e72268bd4be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_02ca7567048b3ea3347a8cf36cc03bef.setIcon(icon_2c4e70961548447fd6e72e72268bd4be);
+        
+    
+        var popup_57ee7d18eb87264344c984e6405ca5c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e61a7334a82d51c212f4a8d065085939 = $(`<div id="html_e61a7334a82d51c212f4a8d065085939" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_57ee7d18eb87264344c984e6405ca5c4.setContent(html_e61a7334a82d51c212f4a8d065085939);
+            
+        
+
+        marker_02ca7567048b3ea3347a8cf36cc03bef.bindPopup(popup_57ee7d18eb87264344c984e6405ca5c4)
+        ;
+
+        
+    
+    
+            var marker_28f8d90918dd77099b3c35c9b44a9b6e = L.marker(
+                [13.04209, 77.614945],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_ed93fb07cda65d08112dae519d412aa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_28f8d90918dd77099b3c35c9b44a9b6e.setIcon(icon_ed93fb07cda65d08112dae519d412aa6);
+        
+    
+        var popup_758bfa4bce3783bd29e4592ddacfd348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d20bf18a2ab7851d0f72b0eaa0040979 = $(`<div id="html_d20bf18a2ab7851d0f72b0eaa0040979" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_758bfa4bce3783bd29e4592ddacfd348.setContent(html_d20bf18a2ab7851d0f72b0eaa0040979);
+            
+        
+
+        marker_28f8d90918dd77099b3c35c9b44a9b6e.bindPopup(popup_758bfa4bce3783bd29e4592ddacfd348)
+        ;
+
+        
+    
+    
+            var marker_d9f388bfb9e4dc0465a2e37ecfe5a781 = L.marker(
+                [12.99929, 77.54963],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_581449efa5170fbf67a3570a4bc2fb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9f388bfb9e4dc0465a2e37ecfe5a781.setIcon(icon_581449efa5170fbf67a3570a4bc2fb7a);
+        
+    
+        var popup_46901e598f8d985bcdaf401a2e663126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cf75542a0117874902e76c71366e545 = $(`<div id="html_8cf75542a0117874902e76c71366e545" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_46901e598f8d985bcdaf401a2e663126.setContent(html_8cf75542a0117874902e76c71366e545);
+            
+        
+
+        marker_d9f388bfb9e4dc0465a2e37ecfe5a781.bindPopup(popup_46901e598f8d985bcdaf401a2e663126)
+        ;
+
+        
+    
+    
+            var marker_cdbaa749e7f9e8f2fd8e793a14b8a333 = L.marker(
+                [12.90392, 77.57349],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_3a0f5fabdad7c1c769e51f9d24408f53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cdbaa749e7f9e8f2fd8e793a14b8a333.setIcon(icon_3a0f5fabdad7c1c769e51f9d24408f53);
+        
+    
+        var popup_443a98ca8333688393e148f251413b06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_599c20110aed68183cff5aa47a989a15 = $(`<div id="html_599c20110aed68183cff5aa47a989a15" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_443a98ca8333688393e148f251413b06.setContent(html_599c20110aed68183cff5aa47a989a15);
+            
+        
+
+        marker_cdbaa749e7f9e8f2fd8e793a14b8a333.bindPopup(popup_443a98ca8333688393e148f251413b06)
+        ;
+
+        
+    
+    
+            var marker_6e999b7c8ae3965b37a85eda57249daf = L.marker(
+                [13.028182505, 77.5321007],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_caa5bd16eca3c2244ef9046c73d170d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e999b7c8ae3965b37a85eda57249daf.setIcon(icon_caa5bd16eca3c2244ef9046c73d170d8);
+        
+    
+        var popup_67df024068d5b778cc07c8a7f6878a50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970284758dba8dfdd7466193621634e6 = $(`<div id="html_970284758dba8dfdd7466193621634e6" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_67df024068d5b778cc07c8a7f6878a50.setContent(html_970284758dba8dfdd7466193621634e6);
+            
+        
+
+        marker_6e999b7c8ae3965b37a85eda57249daf.bindPopup(popup_67df024068d5b778cc07c8a7f6878a50)
+        ;
+
+        
+    
+    
+            var marker_f220063e71fef2599137113a619b8714 = L.marker(
+                [12.949891765, 77.54074014],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_a08bfec41ae87cf8e05cb76d13301b85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f220063e71fef2599137113a619b8714.setIcon(icon_a08bfec41ae87cf8e05cb76d13301b85);
+        
+    
+        var popup_8f25db1da9aff39bd7da59ba2bf15f6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_874838a6f0f3b47986a0caa793ede530 = $(`<div id="html_874838a6f0f3b47986a0caa793ede530" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_8f25db1da9aff39bd7da59ba2bf15f6c.setContent(html_874838a6f0f3b47986a0caa793ede530);
+            
+        
+
+        marker_f220063e71fef2599137113a619b8714.bindPopup(popup_8f25db1da9aff39bd7da59ba2bf15f6c)
+        ;
+
+        
+    
+    
+            var marker_c41c7429e2385459da3444b67a7b45f9 = L.marker(
+                [12.94340928, 77.69041467],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_f9a53fec6f127f4d40cd88920e47ee2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c41c7429e2385459da3444b67a7b45f9.setIcon(icon_f9a53fec6f127f4d40cd88920e47ee2c);
+        
+    
+        var popup_25997a3667af2fbefa6df83196c3ffdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f276e1980374864fbad5c281c6f6a2f = $(`<div id="html_0f276e1980374864fbad5c281c6f6a2f" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_25997a3667af2fbefa6df83196c3ffdc.setContent(html_0f276e1980374864fbad5c281c6f6a2f);
+            
+        
+
+        marker_c41c7429e2385459da3444b67a7b45f9.bindPopup(popup_25997a3667af2fbefa6df83196c3ffdc)
+        ;
+
+        
+    
+    
+            var marker_28cda7d77de8d0f99bd57d784527dddf = L.marker(
+                [12.980862485, 77.73649230000001],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_6fdc79ad6358e781bc844161df24195f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_28cda7d77de8d0f99bd57d784527dddf.setIcon(icon_6fdc79ad6358e781bc844161df24195f);
+        
+    
+        var popup_ea9e3c81e1231e1c797db15ffc5a7291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dce148bc8bc1a2270f206a70b0715fbd = $(`<div id="html_dce148bc8bc1a2270f206a70b0715fbd" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_ea9e3c81e1231e1c797db15ffc5a7291.setContent(html_dce148bc8bc1a2270f206a70b0715fbd);
+            
+        
+
+        marker_28cda7d77de8d0f99bd57d784527dddf.bindPopup(popup_ea9e3c81e1231e1c797db15ffc5a7291)
+        ;
+
+        
+    
+    
+            var marker_c8cabfe8686ed394525c840acb41a622 = L.marker(
+                [12.911494305, 77.64897139],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_b704df3fff47d9aa48afbf190f50d817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c8cabfe8686ed394525c840acb41a622.setIcon(icon_b704df3fff47d9aa48afbf190f50d817);
+        
+    
+        var popup_ba6e50e698ae6801ec0bb457e208fd3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c0f0f10508093a4c68f76fb50275bf4 = $(`<div id="html_7c0f0f10508093a4c68f76fb50275bf4" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_ba6e50e698ae6801ec0bb457e208fd3b.setContent(html_7c0f0f10508093a4c68f76fb50275bf4);
+            
+        
+
+        marker_c8cabfe8686ed394525c840acb41a622.bindPopup(popup_ba6e50e698ae6801ec0bb457e208fd3b)
+        ;
+
+        
+    
+    
+            var marker_42342b4d33b098f5775198ba6973dce9 = L.marker(
+                [12.959008104999999, 77.663979275],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_03b5c81bf1b1f8c738d607e769f9150a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_42342b4d33b098f5775198ba6973dce9.setIcon(icon_03b5c81bf1b1f8c738d607e769f9150a);
+        
+    
+        var popup_e898b52e91fc5c43c049860bd06ec7d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c071d444e71dd4c6b94e63870715f349 = $(`<div id="html_c071d444e71dd4c6b94e63870715f349" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_e898b52e91fc5c43c049860bd06ec7d1.setContent(html_c071d444e71dd4c6b94e63870715f349);
+            
+        
+
+        marker_42342b4d33b098f5775198ba6973dce9.bindPopup(popup_e898b52e91fc5c43c049860bd06ec7d1)
+        ;
+
+        
+    
+    
+            var marker_17b03cd5e968dd4327dcfcc8b6ba65e2 = L.marker(
+                [12.93068034, 77.57662739],
+                {}
+            ).addTo(map_7fd953478c3078f8bfe5628421278be2);
+        
+    
+            var icon_9f0d06ef85f2b06325ceb1ea7bb5e1c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_17b03cd5e968dd4327dcfcc8b6ba65e2.setIcon(icon_9f0d06ef85f2b06325ceb1ea7bb5e1c4);
+        
+    
+        var popup_ea6871c288de309653778255e0598b63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0155a06b934d58f4fea840dc07886e04 = $(`<div id="html_0155a06b934d58f4fea840dc07886e04" style="width: 100.0%; height: 100.0%;">Predicted EV Charging Station</div>`)[0];
+                popup_ea6871c288de309653778255e0598b63.setContent(html_0155a06b934d58f4fea840dc07886e04);
+            
+        
+
+        marker_17b03cd5e968dd4327dcfcc8b6ba65e2.bindPopup(popup_ea6871c288de309653778255e0598b63)
+        ;
+
+        
+    
+</script>
+</html>
