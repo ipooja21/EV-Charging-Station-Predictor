@@ -55,9 +55,10 @@ As EV adoption accelerates, the demand for well-placed charging infrastructure b
 
 ## DEMO
 ```
-<img width="899" height="745" alt="image" src="https://github.com/user-attachments/assets/04dcec59-4928-43d9-ba37-996c0ddcfc15" />
 
 ```
+<img width="899" height="745" alt="image" src="https://github.com/user-attachments/assets/04dcec59-4928-43d9-ba37-996c0ddcfc15" />
+
 <img width="872" height="767" alt="image" src="https://github.com/user-attachments/assets/c88c9598-8ec6-4dc4-be9d-c25110b2f552" />
 
 ---
