@@ -53,36 +53,12 @@ As EV adoption accelerates, the demand for well-placed charging infrastructure b
 
 ---
 
-## 🏗️ System Architecture
+## DEMO
+```
+<img width="899" height="745" alt="image" src="https://github.com/user-attachments/assets/04dcec59-4928-43d9-ba37-996c0ddcfc15" />
 
 ```
-📊 Input Data
-(Population, Traffic, EV Density, Road Network)
-         │
-         ▼
-┌─────────────────────┐
-│  Data Preprocessing │  ── Feature engineering,
-│  & Feature Eng. 🔧  │      normalization, geo-encoding
-└─────────────────────┘
-         │
-         ▼
-┌─────────────────────┐
-│  ML Prediction      │  ── Trained model predicts
-│  Model 🤖           │      optimal deployment zones
-└─────────────────────┘
-         │
-         ▼
-┌─────────────────────┐
-│  Flask Backend 🌐   │  ── Handles prediction requests
-│                     │      via REST API
-└─────────────────────┘
-         │
-         ▼
-┌─────────────────────┐
-│  Output & Visual    │  ── Recommended locations
-│  Dashboard 📊       │      with priority scores
-└─────────────────────┘
-```
+<img width="872" height="767" alt="image" src="https://github.com/user-attachments/assets/c88c9598-8ec6-4dc4-be9d-c25110b2f552" />
 
 ---
 
